@@ -4,6 +4,7 @@ public class Edge {
 
 	private int from;
 	private int to;
+	private String arrows = "to";
 
 	public Edge(int from, int to) {
 		super();
@@ -27,9 +28,17 @@ public class Edge {
 		this.to = to;
 	}
 
+	public String getArrows() {
+		return arrows;
+	}
+
+	public void setArrows(String arrows) {
+		this.arrows = arrows;
+	}
+
 	@Override
 	public String toString() {
-		return "Edge [from=" + from + ", to=" + to + "]";
+		return "Edge [from=" + from + ", to=" + to + ", arrows=" + arrows + "]";
 	}
 
 	@Override
